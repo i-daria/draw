@@ -1,0 +1,39 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0;
+  padding: 30px 610px 130px 160px;
+  color: $headerFontColor;
+  background-color: $darkBackground;
+  border-radius: $borderRadius;
+
+  &__logo {
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 28px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 108px;
+  }
+
+  &__button {
+    width: 240px;
+  }
+
+  &__img {
+    position: absolute;
+    top: 40px;
+    right: 220px;
+    width: 311px;
+    height: 630px;
+  }
+
+}
