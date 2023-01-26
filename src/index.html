@@ -16,7 +16,7 @@
     <img src="./images/header.png" alt="рисунок каракули" class="img-with-shadow header__img">
   </header>
   <main>
-    <section class="section feature">
+    <section class="section feature section_narrow">
       <div class="feature__item">
         <span class="feature__tag">AI</span>
         <h3 class="feature__heading">Умный интелект приложения</h3>
@@ -30,16 +30,16 @@
       </div>
     </section>
 
-    <section class="section example">
+    <section class="section example section_narrow">
       <h2 class="section__title">Чик-чирик и ваша каляка превращается в изумительное произведение искусства.</h2>
       <div class="gallery">
-        <img src="./images/main-left.png" alt="пример рисунка" class="gallery__item">
-        <img src="./images/main-center.png" alt="пример рисунка" class="gallery__item">
-        <img src="./images/main-right.png" alt="пример рисунка" class="gallery__item">
+        <img src="./images/main-left.png" alt="пример рисунка" class="gallery__item img-with-shadow">
+        <img src="./images/main-center.png" alt="пример рисунка" class="gallery__item img-with-shadow">
+        <img src="./images/main-right.png" alt="пример рисунка" class="gallery__item img-with-shadow">
       </div>
     </section>
 
-    <section class="section feature">
+    <section class="section feature section_narrow">
       <div class="feature__item">
         <span class="feature__tag">Быстро</span>
         <h3 class="feature__heading">Проблем с рисованием — нет</h3>
@@ -52,24 +52,28 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section_narrow">
       <h2 class="section__title">Качайте приложение и улучшайте свои художества, а потом хвастайтесь ими!</h2>
     </section>
 
-    <form class="form write-us">
-      <h3 class="form__title">Хотите нам что-то посоветовать?</h3>
-      <p class="form__subtitle">Оставьте заявку и мы свяжемся с вами.</p>
-      <input name="name" type="text" class="form__input" placeholder="Ваше Имя">
-      <input name="email" type="email" class="form__input" placeholder="Контактный Email">
-      <textarea name="form__message" id="message" cols="30" rows="10" placeholder="Сообщение"></textarea>
-      <button type="submit" class="button button_dark form__button">Оставить заявку</button>
-    </form>
+    <section class="section section_narrow">
+      <form class="form write-us">
+        <h3 class="form__title">Хотите нам что-то посоветовать?</h3>
+        <p class="form__subtitle">Оставьте заявку и мы свяжемся с вами.</p>
+        <fieldset class="form__inputs">
+          <input name="name" type="text" class="form__input" placeholder="Ваше Имя">
+          <input name="email" type="email" class="form__input" placeholder="Контактный Email">
+          <textarea name="form__message" id="message" class="form__input form__message" cols="10" rows="4" placeholder="Сообщение"></textarea>
+        </fieldset>
+        <button type="submit" class="button button_dark form__button">Оставить заявку</button>
+      </form>
+    </section>
   </main>
-  <footer>
+  <footer class="footer">
     <h3 class="footer__title">Хотите скачать приложение?</h3>
     <p class="subtitle footer__subtitle">Качайте в ЭпСтор и ГуглПлэй.</p>
     <a class="button button_light footer__button">Уже скоро!</a>
-    <img src="./images/footer.png" alt="рисунок thumb up!" class="foter__img">
+    <img src="./images/footer.png" alt="рисунок thumb up!" class="footer__img img-with-shadow">
   </footer>
 </body>
 </html>
