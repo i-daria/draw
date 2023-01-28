@@ -1,9 +1,9 @@
 .feature {
   margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 
   &__item {
@@ -27,6 +27,9 @@
     font-weight: 500;
     line-height: 1.11;
     opacity: 0.6;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__heading {
@@ -37,9 +40,63 @@
     font-weight: 600;
     font-size: 2 * $baseFontSize;
     line-height: 1.19;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   &__description {
     @include blockSubtitle;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .feature {
+    gap: 10px;
+  }
+
+  .feature__item {
+    max-width: 349px;
+    height: 284px;
+    padding: 30px;
+  }
+
+  .feature__tag {
+    margin-bottom: 12px;
+    font-size: 0.93 * $baseFontSize;
+    line-height: 1.33;
+  }
+
+  .feature__heading {
+    height: 93px;
+    margin-bottom: 19px;
+    font-size: 1.62 * $baseFontSize;
+    line-height: 1.19;
+  }
+
+  .feature__description {
+    font-size: 0.93 * $baseFontSize;
+    line-height: 1.33;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .feature {
+    position: relative;
+    height: calc(284px + 24px); // либо сделать радиобаттон с паддинг топ 284px ?????!!!!
+    gap: 0;
+  }
+
+  .feature__item {
+    position: absolute;
+    padding: 20px;
+    //max-width: 300px;
   }
 }

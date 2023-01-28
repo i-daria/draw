@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  min-height: 640px;
   margin: 0;
   margin-bottom: 60px;
   padding: 30px 610px 130px 160px;
@@ -18,15 +18,18 @@
   &__title {
     margin: 0;
     margin-bottom: 28px;
+    text-align: left;
   }
 
   &__subtitle {
     margin: 0;
-    margin-bottom: 108px;
+    margin-bottom: 20px;
+    text-align: left;
   }
 
   &__button {
     width: 240px;
+    margin-top: auto !important;
   }
 
   &__img {
@@ -37,4 +40,56 @@
     height: 630px;
   }
 
+}
+
+@media screen and (max-width: $tablet) {
+  .header {
+    min-height: 602px;
+    margin-bottom: 70px;
+    padding: 50px;
+    padding-right: 338px;
+  }
+
+  .header__logo {
+    margin-bottom: 50px;
+  }
+
+  .header__title {
+    margin-bottom: 20px;
+  }
+
+  .header__img {
+    right: 45px;
+    top: 120px;
+    width: 250px;
+    height: 502px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .header {
+    align-items: center;
+    padding: 20px;
+  }
+
+  .header__logo {
+    align-self: flex-start;
+  }
+
+  .header__title {
+    margin-bottom: 14px;
+    width: auto;
+  }
+
+  .header__subtitle {
+    margin-bottom: 50px;
+    width: auto;
+  }
+
+  .header__img {
+    position: static;
+    width: 260px;
+    height: 522px;
+    margin-bottom: 50px;
+  }
 }

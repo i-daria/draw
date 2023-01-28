@@ -4,3 +4,19 @@
   line-height: 1.44;
   opacity: 0.7;
 }
+
+@media screen and (max-width: $tablet) {
+  .subtitle {
+    width: 360px;
+    font-size: 0.93 * $baseFontSize;
+    line-height: 1.33;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .subtitle {
+    width: 260px;
+    font-size: 0.75 * $baseFontSize;
+    line-height: 1.25;
+  }
+}

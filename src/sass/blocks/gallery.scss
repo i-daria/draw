@@ -1,4 +1,38 @@
 .gallery {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+
+  &__item {
+    width: 350px;
+    height: 709px;
+  }
+}
+
+
+@media screen and (max-width: $tablet) {
+  .gallery {
+    height: calc(461px + 24px);
+    gap: 15px;
+  }
+
+  .gallery__item {
+    width: 226px;
+    height: 461px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .gallery {
+    height: calc(522px + 24px);
+    gap: 0;
+  }
+
+  .gallery__item {
+    position: absolute;
+    width: 260px;
+    height: 522px;
+  }
 }

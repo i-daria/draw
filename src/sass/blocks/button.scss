@@ -2,7 +2,7 @@
   display: block;
   margin: 0;
   padding: 15px;
-  font-size: 1rem;
+  font-size: $baseFontSize;
   line-height: 1.5;
   font-weight: 600;
   text-align: center;
@@ -29,5 +29,23 @@
   &_light:hover,
   &_light:active {
     opacity: 0.93;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .button {
+    padding: 12px;
+    font-size: 0.87 * $baseFontSize;
+    line-height: 1.71;
+  }
+
+}
+
+@media screen and (max-width: $mobile) {
+  .button {
+    width: 260px;
+    padding: 10px;
+    font-size: 0.75 * $baseFontSize;
+    line-height: 2;
   }
 }
