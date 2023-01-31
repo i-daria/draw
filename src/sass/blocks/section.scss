@@ -1,0 +1,42 @@
+.section {
+  &_narrow {
+    padding-left: $sectionNarrow;
+    padding-right: $sectionNarrow;
+    margin-bottom: 120px;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 120px;
+    font-weight: 600;
+    font-size: 3.75 * $baseFontSize;
+    line-height: 1.13;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .section_narrow {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 70px;
+  }
+
+  .section__title {
+    font-size: 2.06 * $baseFontSize;
+    line-height: 1.12;
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .section_narrow {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .section__title {
+    font-size: 1.65 * $baseFontSize;
+    line-height: 1.19;
+  }
+}

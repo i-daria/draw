@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 1440px;
+  min-width: 320px;
+  background-color: #ffffff;
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-size: $baseFontSize;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  color: $baseFontColor;
+  box-sizing: border-box;
+}

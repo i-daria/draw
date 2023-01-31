@@ -1,0 +1,19 @@
+@import "../vendor/normalize.css";
+@import "../vendor/fonts.css";
+
+@import "./_variables.scss";
+@import "./mixins/mixins";
+@import "./blocks/page.scss";
+@import "./blocks/header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/page-title.scss";
+@import "./blocks/subtitle.scss";
+@import "./blocks/button.scss";
+@import "./blocks/img-with-shadow.scss";
+@import "./blocks/feature.scss";
+@import "./blocks/section.scss";
+@import "./blocks/gallery.scss";
+@import "./blocks/form.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/slides.scss";
+
