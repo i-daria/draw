@@ -5,12 +5,14 @@
   "main": "gulpfile.js",
   "type": "module",
   "dependencies": {
-    "gulp-cli": "^2.3.0"
+    "gulp-cli": "^2.3.0",
+    "gulp-gh-pages-latest": "^0.6.0-6"
   },
   "devDependencies": {
     "del": "^7.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
+    "gulp-gh-pages": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "sass": "^1.57.1"
@@ -20,9 +22,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/i-daria/draw.git"
+    "url": "https://github.com/i-daria/draw.git"
   },
-  "author": "",
+  "author": "daria@gmail.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/i-daria/draw/issues"

@@ -5,6 +5,7 @@ import dartSass from "sass";
 import gulpSass from "gulp-sass";
 import sourcemaps from "gulp-sourcemaps";
 import autoprefixer from "gulp-autoprefixer";
+import ghPages from "gulp-gh-pages";
 
 const buildFolder = './dist';
 const srcFolder = './src';
@@ -80,3 +81,8 @@ const dev = gulp.series(reset, copyAll, watcher);
 
 //выполнение задач
 gulp.task('default', dev);
+
+gulp.task('deploy', function () {
+  return gulp.src(`./dist/**/*`)
+  .pipe(ghPages());
+});
